@@ -39,29 +39,19 @@ int main (int argc, char **argv)
 
 int main(int argc, char **argv)
 {
-    if (argc != 4)
+    if (argc == 4){
+        char a = argv[2][0];
+        char b = argv[3][0];
+        int i = 0;
+    while(argv[1][i])
     {
-        write(1, "\n", 1);
-        return (0);
-    }
-    if(argv[2][1] != '\0' || argv[3][1] !='\0')
-    {
-        write(1, "\n", 1);
-        return (0);
-    }
-    char *str = argv[1];
-    char a = argv[2][0];
-    char b = argv[3][0];
-    int i = 0;
-
-    while(str[i])
-    {
-        if (str[i] == a)
+        if (argv[1][i] == a)
             write(1, &b, 1);
         else
-            write(1, &str[i], 1);
+            write(1, &argv[1][i], 1);
         i++;
     }
+}   
     write(1, "\n", 1);
     return (0);
 }
