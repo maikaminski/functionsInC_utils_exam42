@@ -28,6 +28,8 @@ char **ft_split(char *str)
 	return (array);
 }
 
+
+
 int main(int argc, char **argv)
 {
 	char	**split;
@@ -48,3 +50,14 @@ int main(int argc, char **argv)
 	printf("\n");
     return (0);
 }
+
+
+main():
+	char **strings
+	int i = 1
+
+	casos de erro
+	strings = ft_split(argv[1])
+	while (strings[i])
+		printf(strings[i++])
+	printf(strings[0])

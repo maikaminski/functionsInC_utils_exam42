@@ -21,6 +21,7 @@ int main(int argc, char **argv)
         else if (argv[2][0] == '*')
             res = n1 * n2;
         printf("%d", res);
+        // write(1, "\n", 1);
         }
     else
         write(1, "\n", 1);
